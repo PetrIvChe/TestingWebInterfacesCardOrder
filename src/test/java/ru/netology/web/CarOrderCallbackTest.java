@@ -3,6 +3,7 @@ package ru.netology.web;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
@@ -15,7 +16,9 @@ public class CarOrderCallbackTest {
     public static void setUpAll() {
 
 
-        System.setProperty("webdriver.chrome.driver", "E:/QA/AutomatedTesting/TestingWebInterfacesCardOrder/driver/win32/chromedriver.exe");
+       System.setProperty("webdriver.chrome.driver", "E:/QA/AutomatedTesting/TestingWebInterfacesCardOrder/driver/win32/chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "./driver/win32/chromedriver.exe");
+
     }
 
     @BeforeEach
@@ -33,6 +36,13 @@ public class CarOrderCallbackTest {
         driver.quit();
         driver = null;
     }
+
+    @Test
+    public void shouldReturnForm () {
+         driver.get("http://localhost:999");
+
+    }
+
 }
 
 
