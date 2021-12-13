@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CarOrderCallbackTest {
     private ChromeDriver driver;
-    private ChromeOptions options;
+    //private ChromeOptions options;
 
 
     @BeforeAll

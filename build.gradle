@@ -5,7 +5,7 @@ plugins {
 group 'ru.netology'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 11
+sourceCompatibility = 1.8
 
 // кодировка файлов (если используете русский язык в файлах)
 compileJava.options.encoding = "UTF-8"
@@ -20,6 +20,7 @@ dependencies {
     //only selenium
      //testImplementation 'com.codeborne:selenide:5.19.0'
     testImplementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+
 
 }
 
